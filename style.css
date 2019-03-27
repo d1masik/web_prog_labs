@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.div {
+  margin-top:0px;
+  overflow: hidden;
+
+}
+main {
+  width: 100%;
+}
+p {
+  margin: 0px;
+}
+.img-conteiner {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.first {
+  width: 445px;
+  text-align: left;
+  min-width: 445px;
+  height: auto;
+
+}
+.flex-4 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.second {
+  width: 100%;
+  height: auto;
+  background: #5F9EA0;
+  font-size: 30px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.third {
+  width: 100%;
+  height: auto;
+  background: #ADD8E6;
+
+}
+.fourth {
+  width: 100%;
+  height: auto;
+  background: #0000FF;
+  flex-shrink: 1;
+}
+.fifth {
+  width: 445px;
+  min-width: 445px;
+  /*height: auto;*/
+  background:#20B2AA;
+  flex-grow: 1;
+}
+.sixth {
+  width: 445px;
+  min-width: 445px;
+  /*height: auto;*/
+  background:#66CDAA;
+  flex-grow: 1;
+}
+.seventh {
+  width:100%;
+  height: auto;
+  background:#6495ED ;
+}
+.eight {
+  width: 445px;
+  min-width:445px;
+  /*height: auto;*/
+  background:#AFEEEE ;
+  flex-grow: 1;
+}
+.nineth {
+  width: 445px;
+  min-width:445px;
+  /*height: auto;*/
+  background:#9370DB ;
+  flex-grow: 1;
+}
+@media (max-width: 463px) {
+  .flex-1, .flex-3, .flex-4 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  .flex-6, .flex-5 {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .fourth, .seventh, .flex-3 {
+    width: 100%;
+  }
+}
